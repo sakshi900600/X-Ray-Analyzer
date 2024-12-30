@@ -1,0 +1,118 @@
+.camera-view{
+    width: 60vw;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.camera-view video, canvas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.camera-view canvas{
+    padding: 12px;
+}
+
+.camera{
+    background: blue;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-top: 15px;
+    position: absolute;
+    bottom: -73px;
+    cursor: pointer;
+}
+.camera:hover{
+    text-decoration: none;
+}
+
+
+/* upload view -------------------------- */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.img-upload{
+    margin-top: 7vh;
+}
+
+.upload-card{
+    border: 2px dotted gray;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: column;
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+    border-radius: 12px;
+    box-shadow: rgba(3, 65, 236, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+.upload-card:hover{
+    outline: 1.5px dotted blue;
+}
+
+.upload-card .desc{
+    color: rgb(105, 105, 105);
+}
+.upload-card .desc .click{
+    font-weight: bold;
+    color: black;
+}
+
+.upload-card .file-type{
+    font-size: 14px;
+    margin-top: 2px;
+    color: rgb(105, 105, 105);
+}
+
+
+.uploaded-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+button{
+    margin-top: 12px;
+    color: blue;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+.switchToUpload{
+    margin-top: 64px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .upload-card{
+        width: 90vw;
+        height: 60vh;
+    }
+}

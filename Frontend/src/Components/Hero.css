@@ -1,0 +1,39 @@
+
+.hero{
+    margin-top: 15vh;
+}
+
+.hero-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 55px;
+}
+
+.hero-header h1{
+    font-size: 41px;
+    padding-bottom: 14px;
+}
+
+.hero-header p{
+    font-size: 16px;
+    color: rgb(74, 73, 73);
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .hero-header{
+        padding-top: 35px;
+    }
+    
+    .hero-header h1{
+        font-size: 31px;
+    }
+    
+    .hero-header p{
+        font-size: 14px;
+    }
+
+}
