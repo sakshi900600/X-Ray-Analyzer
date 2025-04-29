@@ -17,7 +17,8 @@ const ImageUploader = () => {
       const formData = new FormData()
       formData.append('image', file)
 
-      const response = await fetch('http://localhost:5000/upload', {
+      // const response = await fetch('http://localhost:5000/upload', {
+      const response = await fetch('https://x-ray-analyzer-backend.onrender.com/upload', {
         method: 'POST',
         body: formData
       })
